@@ -37,8 +37,8 @@ function corsinaction () {
 
     $.ajax({
         type: "GET",
-        //url: "http://appevt.byethost31.com/webservice.php",
-        url: "http://localhost/php_appEvt/webservice.php",
+        url: "http://appevt.byethost31.com/webservice.php",
+        //url: "http://localhost/php_appEvt/webservice.php",
         dataType: "jsonp",
         jsonpCallback: 'photos',
     });
