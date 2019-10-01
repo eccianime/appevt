@@ -1,0 +1,54 @@
+@font-face{
+	font-family: 'Ubuntu Light';
+	src: url("../fonts/Ubuntu-L.ttf");
+}
+
+@font-face{
+	font-family: 'Ubuntu';
+	src: url("../fonts/Ubuntu-R.ttf");
+}
+
+*{
+	font-family: "Ubuntu";
+	font-weight: lighter;
+}
+
+.home{
+	background-image: url( ../img/fondo.jpg );
+	background-position: center center;
+	background-size: cover;
+}
+
+.logocentral{
+	margin: 15%;
+	width: 70%;
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+}
+
+.logoinferior{
+	width: 50%;
+	left: 50%;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.div-footer{
+	height: 80px;
+	line-height: 2px;
+	font-size: .9em
+}
+
+.bg-trans{
+	background-color: transparent;
+	border-style: none;
+}
+
+.bg-white{
+	border-style: none;
+	background-color: white;
+}

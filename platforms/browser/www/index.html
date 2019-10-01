@@ -3,37 +3,53 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script src="cordova.js"></script>
-    <script src="js/index.js"></script>
+	<title>EBE Tracking</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<link rel="apple-touch-icon" href="img/favicon.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="cordova.js"></script>
+	<script src="js/index.js"></script>
 </head>
 
 <body onload = "onBodyLoad()">
-    <div data-role = "page" id = "home">
-        <div data-role = "header" data-theme="b">
-            <h1>jQuery Mobile Application</h1>
-        </div>
-    
-        <div data-role = "content">
-            <p>Datos del Acelerómetro: </p>
-            <p>Tiempo en Segundos: <span id="segundos"></span></p>
-            <p>Latitud: <span id="lati"></span></p>
-            <p>Longitud: <span id="longi"></span></p>
-            <p>Altitud: <span id="alti"></span></p>
-        </div>
-    
-        <div data-role = "footer">
-            <h4> Page Footer </h4>
-        </div>
-    </div>
+	<section data-role="page" id="home" class="home">
+		<a href="tpl/base.html">
+			<div role="main" class="ui-content">
+				<img src="img/logo.png" class="logocentral">
+				<!-- <img src="img/ebetracking.png" class="logocentral"> -->
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="a" class="bg-trans text-center">
+				<div class="div-footer">
+				  <img src="img/presentadopor.png" class="logoinferior">  
+				</div>
+			</div>
+		</a>
+	</section>
+	<!-- <section data-role="page" id="segundaopcion" class="home">
+		<a href="tpl/base.html">
+			<div role="main" class="ui-content">
+				<img src="img/ebetracking.png" class="logocentral">
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="a" class="bg-trans text-center">
+				<div class="div-footer">
+				  <img src="img/presentadopor.png" class="logoinferior">  
+				</div>
+			</div>
+		</a>
+	</section>     -->
 </body>
 
 </html>

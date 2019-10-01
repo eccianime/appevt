@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "AppEvts",
-  "short_name": "AppEvts",
-  "version": "com.appevt.app",
-  "description": "Hello World sample application that responds to the deviceready event.",
-  "author": "PhoneGap Team",
+  "name": "EBE TRACKING",
+  "short_name": "EBE TRACKING",
+  "version": "com.ebetracking.app",
+  "description": "El proyecto consiste en desarrollar una herramienta que reduzca el uso del papel y genere ahorros en\ncuanto a uso y orden de la información.",
+  "author": "Ing. Jean Paul Iván Rojas Véliz",
   "icons": [],
   "start_url": "index.html"
 }
