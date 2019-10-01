@@ -41,6 +41,12 @@ function corsinaction () {
         //url: "http://localhost/php_appEvt/webservice.php",
         dataType: "jsonp",
         jsonpCallback: 'photos',
+        xhrFields: {
+           withCredentials: true
+        },
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("Cookie", "__test=32e6df54ae14656fb775b898a2ac0fd9; expires=Thu, 31-Dec-37 23:55:55 GMT; path=/");
+        },
     });
 
 }
