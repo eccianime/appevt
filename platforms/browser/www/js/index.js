@@ -37,21 +37,15 @@ function corsinaction () {
 
     $.ajax({
         type: "GET",
-        url: "http://appevt.byethost31.com/webservice.php",
+        url: "http://appevt.zz.com.ve/webservice.php",
         //url: "http://localhost/php_appEvt/webservice.php",
         dataType: "jsonp",
-        jsonpCallback: 'photos',
-        xhrFields: {
-           withCredentials: true
-        },
-        beforeSend: function(xhr) {
-            xhr.setRequestHeader("Cookie", "__test=32e6df54ae14656fb775b898a2ac0fd9; expires=Thu, 31-Dec-37 23:55:55 GMT; path=/");
-        },
+        jsonpCallback: 'respuestaJSONP',
     });
 
 }
 
-function photos (datos) {
+function respuestaJSONP (datos) {
     console.log(datos);
     $.each(datos,function (i, v) {
         $("#empieza").append("<br/><span>Índice: "+i+" - Valor: "+v+"</span>");
