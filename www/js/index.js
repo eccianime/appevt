@@ -16,21 +16,30 @@ function PGcargado(){
     $.mobile.allowCrossDomainPages = true;
     $.mobile.pushState = false;
 
-    /*setInterval( function () {
-        var f       =   new Date(),
-            h       =   f.getHours(),
-            m       =   f.getMinutes(),
-            s       =   f.getSeconds(),
-            ampm    =   "";
+}
+/*$(document)
+    .on( "mobileinit", function () {
+        $.mobile.defaultPageTransition = 'flip';
+        $.mobile.loadingMessage = "Cargando...";
+        $.mobile.loadingMessageTextVisible = true;
+        $.mobile.loadingMessageTheme = "b";
+        $.mobile.pageLoadErrorMessage = "Disculpe, su solicitud no pudo ser procesada.";
+        $.mobile.pageLoadErrorMessageTheme = "b";
+        console.log("Hola");
+    })*/
+function PGcargado(){
 
-        ampm = h > 12 ? "PM" : "AM";
-        h = h > 12 ? h-12 : h;
-        h = h < 10 ? "0"+h : h;
-        m = m < 10 ? "0"+m : m;
-        s = s < 10 ? "0"+s : s;
-        $("#hora").html(h+":"+m+":"+s+" "+ampm);
-
-    }, 1000 );*/
+    $.mobile.defaultPageTransition = 'flip';
+    $.mobile.loadingMessage = "Cargando...";
+    $.mobile.loadingMessageTextVisible = true;
+    $.mobile.loadingMessageTheme = "b";
+    $.mobile.pageLoadErrorMessage = "Disculpe, su solicitud no pudo ser procesada.";
+    $.mobile.pageLoadErrorMessageTheme = "b";
+    $.mobile.pageLoadErrorMessageTheme = "b";
+    
+    $.support.cors = true;
+    $.mobile.allowCrossDomainPages = true;
+    $.mobile.pushState = false;
 }
 
 function corsinaction () {
@@ -38,11 +47,9 @@ function corsinaction () {
     $.ajax({
         type: "GET",
         url: "http://appevt.zz.com.ve/webservice.php",
-        //url: "http://localhost/php_appEvt/webservice.php",
         dataType: "jsonp",
         jsonpCallback: 'respuestaJSONP',
     });
-
 }
 
 function respuestaJSONP (datos) {
@@ -51,7 +58,6 @@ function respuestaJSONP (datos) {
         $("#empieza").append("<br/><span>Índice: "+i+" - Valor: "+v+"</span>");
     });
 }
-
 function obtenerUbicacion () {
     navigator.geolocation.getCurrentPosition( bien, mal );
 
@@ -86,3 +92,17 @@ function obtenerUbicacion () {
         }
     }
 }
+    /*setInterval( function () {
+        var f       =   new Date(),
+            h       =   f.getHours(),
+            m       =   f.getMinutes(),
+            s       =   f.getSeconds(),
+            ampm    =   "";
+
+        ampm = h > 12 ? "PM" : "AM";
+        h = h > 12 ? h-12 : h;
+        h = h < 10 ? "0"+h : h;
+        m = m < 10 ? "0"+m : m;
+        s = s < 10 ? "0"+s : s;
+        $("#hora").html(h+":"+m+":"+s+" "+ampm);
+    }, 1000 );*/

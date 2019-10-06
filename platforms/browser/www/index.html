@@ -7,49 +7,44 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="msapplication-tap-highlight" content="no" />
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-	<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
 	<title>EBE Tracking</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="css/app.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="css/waves.min.css">
+	<link rel="stylesheet" href="css/nativedroid2.css">
+	<link rel="stylesheet" href="css/app.css">
 
 	<link rel="apple-touch-icon" href="img/favicon.png">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.mobile-1.4.5.min.js"></script>
-	<script src="cordova.js"></script>
+	<script src="js/jqueryui.min.js"></script>
+	<script src="js/waves.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/nds2.js"></script>
+	<!--<script src="cordova.js"></script>-->
 	<script src="js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body onload = "onBodyLoad()">
-	<section data-role="page" id="home" class="home">
-		<a href="tpl/base.html">
+	<section data-role="page" id="home" class="home" data-theme="c">
+		<a href="tpl/login.html">
 			<div role="main" class="ui-content">
 				<img src="img/logo.png" class="logocentral">
-				<!-- <img src="img/ebetracking.png" class="logocentral"> -->
 			</div>
-			<div data-role="footer" data-position="fixed" data-theme="a" class="bg-trans text-center">
+			<div data-role="footer" data-position="fixed" class="bg-trans text-center">
 				<div class="div-footer">
 				  <img src="img/presentadopor.png" class="logoinferior">  
 				</div>
 			</div>
 		</a>
 	</section>
-	<!-- <section data-role="page" id="segundaopcion" class="home">
-		<a href="tpl/base.html">
-			<div role="main" class="ui-content">
-				<img src="img/ebetracking.png" class="logocentral">
-			</div>
-			<div data-role="footer" data-position="fixed" data-theme="a" class="bg-trans text-center">
-				<div class="div-footer">
-				  <img src="img/presentadopor.png" class="logoinferior">  
-				</div>
-			</div>
-		</a>
-	</section>     -->
 </body>
 
 </html>

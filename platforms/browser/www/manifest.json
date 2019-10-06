@@ -7,5 +7,6 @@
   "description": "El proyecto consiste en desarrollar una herramienta que reduzca el uso del papel y genere ahorros en\ncuanto a uso y orden de la información.",
   "author": "Ing. Jean Paul Iván Rojas Véliz",
   "icons": [],
+  "orientation": "portrait",
   "start_url": "index.html"
 }

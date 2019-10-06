@@ -18,4 +18,7 @@ cuanto a uso y orden de la información.
     <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="fullscreen" value="true" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
 </widget>
