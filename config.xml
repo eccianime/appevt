@@ -39,5 +39,5 @@ cuanto a uso y orden de la información.
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova.custom.plugins.exitapp" spec="~1.0.0" />
+    <plugin name="kr.co.joycorp.cordova.exitapp" spec="~1.0.0" />
 </widget>

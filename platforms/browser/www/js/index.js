@@ -19,9 +19,8 @@ function PGcargado(){
     $(document).on("pagechange", function (e, data) {
         var next = data.toPage[0].attributes[1];
         if( next == "home" ){
-            
+            navigator.app.exitApp();
         }
-
     })
 
     setTimeout( function () {
