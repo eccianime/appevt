@@ -1,12 +1,4 @@
 {
-  "cordova-plugin-battery-status": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-battery-status@~1.2.4"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-camera": {
     "source": {
       "type": "registry",
@@ -67,14 +59,6 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-globalization@~1.0.7"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-inappbrowser": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-inappbrowser@~1.7.1"
     },
     "is_top_level": true,
     "variables": {}

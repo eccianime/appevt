@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "com.appevt.app"
-    },
     "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "com.appevt.app"
     },
@@ -23,9 +20,6 @@
       "PACKAGE_NAME": "com.appevt.app"
     },
     "cordova-plugin-globalization": {
-      "PACKAGE_NAME": "com.appevt.app"
-    },
-    "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.appevt.app"
     },
     "cordova-plugin-network-information": {
