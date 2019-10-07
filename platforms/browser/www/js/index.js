@@ -16,30 +16,18 @@ function PGcargado(){
     $.mobile.allowCrossDomainPages = true;
     $.mobile.pushState = false;
 
-}
-/*$(document)
-    .on( "mobileinit", function () {
-        $.mobile.defaultPageTransition = 'flip';
-        $.mobile.loadingMessage = "Cargando...";
-        $.mobile.loadingMessageTextVisible = true;
-        $.mobile.loadingMessageTheme = "b";
-        $.mobile.pageLoadErrorMessage = "Disculpe, su solicitud no pudo ser procesada.";
-        $.mobile.pageLoadErrorMessageTheme = "b";
-        console.log("Hola");
-    })*/
-function PGcargado(){
+    $(document).on("pagechange", function (e, data) {
+        var next = data.toPage[0].attributes[1];
+        if( next == "home" ){
+            
+        }
 
-    $.mobile.defaultPageTransition = 'flip';
-    $.mobile.loadingMessage = "Cargando...";
-    $.mobile.loadingMessageTextVisible = true;
-    $.mobile.loadingMessageTheme = "b";
-    $.mobile.pageLoadErrorMessage = "Disculpe, su solicitud no pudo ser procesada.";
-    $.mobile.pageLoadErrorMessageTheme = "b";
-    $.mobile.pageLoadErrorMessageTheme = "b";
-    
-    $.support.cors = true;
-    $.mobile.allowCrossDomainPages = true;
-    $.mobile.pushState = false;
+    })
+
+    setTimeout( function () {
+        $.mobile.changePage( "tpl/login.html" );
+    }, 3000);
+
 }
 
 function corsinaction () {

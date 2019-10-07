@@ -13,6 +13,14 @@
 	font-weight: lighter !important;
 }
 
+i.zmdi{
+	font-family: 'Material-Design-Iconic-Font' !important;
+}
+
+i.fa{
+	font-family: 'FontAwesome' !important;
+}
+
 .home{
 	background-image: url( ../img/fondo.jpg );
 	background-position: center center;
@@ -29,10 +37,7 @@ h2{
 }
 
 .fondo-normal{
-	background-image: -moz-linear-gradient(top, #fff 0%, #4183d7 100%);
-	background-image: -o-linear-gradient(top, #fff 0%, #4183d7 100%);
-	background-image: -webkit-linear-gradient(top, #fff 0%, #4183d7 100%);
-	background-image: linear-gradient(top, #fff 0%, #4183d7 100%);
+	background-color: rgb(239,239,239) !important;
 }
 
 .al80{
@@ -138,10 +143,6 @@ h2{
 
 .table tbody tr:nth-of-type(2n+1) {
     background-color: rgba(0,0,0,.05);
-}
-
-.table-bordered{
-    border: 1px solid #dee2e6;
 }
 
 .table-bordered td,.table-bordered th {

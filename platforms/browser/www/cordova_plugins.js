@@ -345,6 +345,14 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/cordova.custom.plugins.exitapp/www/ExitApp.js",
+        "id": "cordova.custom.plugins.exitapp.exitApp",
+        "pluginId": "cordova.custom.plugins.exitapp",
+        "merges": [
+            "navigator.app"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -359,7 +367,8 @@ module.exports.metadata =
     "cordova-plugin-globalization": "1.0.9",
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova.custom.plugins.exitapp": "1.0.0"
 }
 // BOTTOM OF METADATA
 });
